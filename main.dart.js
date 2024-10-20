@@ -68785,7 +68785,7 @@ l=p.Bx(A.dA(n.a.a,null)-A.dA(k.a.a,null))
 k=q.e.a.a
 n=q.f.a.a
 s=4
-return A.U(A.SB("Additional fuel uplifted for:\nAircraft: N"+k+"FX\nTrip: "+n+"\nFlight Plan Fuel: "+o+" lb\nDeparture Fuel: "+m+" lb\nExtra fuel: "+l+" lb\n\nReasoning:\n"+q.x.a.a,"additionalfuel@flexjet.com","N"+k+"FX extra fuel on trip "+n),$async$t0)
+return A.U(A.SB("Additional fuel uplifted for:\nAircraft: N"+k+"FX\nTrip: "+n+"\nFlight Plan Fuel: "+o+" lb.\nDeparture Fuel: "+m+" lb.\nExtra fuel: "+l+" lb.\n\nReasoning:\n"+q.x.a.a,"additionalfuel@flexjet.com","N"+k+"FX extra fuel on trip "+n),$async$t0)
 case 4:case 3:return A.N(null,r)}})
 return A.O($async$t0,r)},
 ap(){this.aQ()
@@ -68795,7 +68795,7 @@ p.a.toString
 s=A.kA("Fuel Efficiency Report",o,o,o,o,o,o)
 r=t.VS
 q=t.F
-q=A.ae6(A.b([A.af9(A.b([A.TZ(A.CA(p.e,B.fX,"Aircraft",3,1,o,p.gPT(),B.Ou,A.b([new A.jJ(A.hD(n,!0,!1),!0,"")],r),new A.a8U())),B.wD,A.TZ(A.CA(p.f,B.fX,"Trip Number",7,1,o,p.gPW(),o,A.b([new A.jJ(A.hD(n,!0,!1),!0,"")],r),new A.a8V()))],q),B.bp,B.ff),B.wE,A.af9(A.b([A.TZ(A.CA(p.r,B.fX,"Flight Plan Fuel (lb)",o,1,o,o,o,A.b([new A.jJ(A.hD(n,!0,!1),!0,"")],r),new A.a8W())),B.wD,A.TZ(A.CA(p.w,B.fX,"Departure Fuel (lb)",o,1,o,o,o,A.b([new A.jJ(A.hD(n,!0,!1),!0,"")],r),new A.a8X(p)))],q),B.bp,B.ff),B.wE,A.CA(p.x,B.jg,"Reasoning",o,6,6,o,o,o,new A.a8Y())],q),B.bZ,B.bI,B.ff)
+q=A.ae6(A.b([A.af9(A.b([A.TZ(A.CA(p.e,B.fX,"Aircraft",3,1,o,p.gPT(),B.Ou,A.b([new A.jJ(A.hD(n,!0,!1),!0,"")],r),new A.a8U())),B.wD,A.TZ(A.CA(p.f,B.fX,"Trip Number",8,1,o,p.gPW(),o,A.b([new A.jJ(A.hD(n,!0,!1),!0,"")],r),new A.a8V()))],q),B.bp,B.ff),B.wE,A.af9(A.b([A.TZ(A.CA(p.r,B.fX,"Flight Plan Fuel (lb)",o,1,o,o,o,A.b([new A.jJ(A.hD(n,!0,!1),!0,"")],r),new A.a8W())),B.wD,A.TZ(A.CA(p.w,B.fX,"Departure Fuel (lb)",o,1,o,o,o,A.b([new A.jJ(A.hD(n,!0,!1),!0,"")],r),new A.a8X(p)))],q),B.bp,B.ff),B.wE,A.CA(p.x,B.jg,"Reasoning",o,6,6,o,o,o,new A.a8Y())],q),B.bZ,B.bI,B.ff)
 return new A.vZ(new A.rq(s,m.ax.b,new A.Lv(o,o,1/0,56),o),new A.Gq(B.B4,new A.tW(q,B.jW,p.d),o),A.arR(B.Ov,!1,p.gXI(),"Increment"),o)}}
 A.a8Z.prototype={
 $0(){var s=this.a,r=this.b.a,q=A.c_(r.h(0,"aircraft"))
