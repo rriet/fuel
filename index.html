@@ -15,21 +15,7 @@
     the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/fuel/">
-
-  <script>
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', function() {
-				navigator.serviceWorker.register('/fuel/sw.js').then(function(registration) {
-					// Registration was successful
-					console.log('ServiceWorker registration successful with scope: ', registration.scope);
-				}, function(err) {
-					// registration failed :(
-					console.log('ServiceWorker registration failed: ', err);
-				});
-			});
-		}
-	</script>
-
+  
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="Generate Fuel Report Emails.">
