@@ -12,6 +12,7 @@ _flutter.buildConfig = {"engineRevision":"a6bd3f1de158bb61090e0c8053df93a10cb548
 const loading = document.createElement('div');
 document.body.appendChild(loading);
 loading.textContent = "Loading Entrypoint...";
+
 _flutter.loader.load({
   onEntrypointLoaded: async function(engineInitializer) {
     loading.textContent = "Initializing engine...";
@@ -20,47 +21,4 @@ _flutter.loader.load({
     loading.textContent = "Running app...";
     await appRunner.runApp();
   }
-});
-
-const OFFLINE_VERSION = 1;
-const CACHE_NAME = "FuelReport";
-var urlsToCache = [
-  "./",
-  "/fuel/",
-  "/fuel/index.html",
-  "/fuel/flutter_bootstrap.js",
-  "/fuel/flutter.js",
-  "/fuel/icons/",
-  "/fuel/icons/Icon-192.png",
-  "/fuel/icons/Icon-512.png",
-  "/fuel/icons/Icon-maskable-192.png",
-  "/fuel/icons/Icon-maskable-512.png",
-  "/fuel/main.dart.js",
-  "/fuel/manifest.json",
-  "/fuel/version.json"
-];
-
-self.addEventListener("install", function (event) {
-  // Perform install steps
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(function (cache) {
-      return cache.addAll(urlsToCache);
-    })
-  );
-});
-
-self.addEventListener('fetch', (event) => {
-  event.respondWith(async function() {
-    const cache = await caches.open(CACHE_NAME);
-    const cachedResponse = await cache.match(event.request);
-    const networkResponsePromise = fetch(event.request);
-
-    event.waitUntil(async function() {
-      const networkResponse = await networkResponsePromise;
-      await cache.put(event.request, networkResponse.clone());
-    }());
-
-    // Returned the cached response if we have one, otherwise return the network response.
-    return cachedResponse || networkResponsePromise;
-  }());
 });
