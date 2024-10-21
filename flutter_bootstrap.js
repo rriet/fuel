@@ -23,7 +23,7 @@ _flutter.loader.load({
 });
 
 const OFFLINE_VERSION = 1;
-const CACHE_NAME = "TechLog";
+const CACHE_NAME = "FuelReport";
 var urlsToCache = [
   "./",
   "/fuel/",
