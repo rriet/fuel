@@ -1,18 +1,27 @@
-const CACHE_NAME = 'my-app-cache-v1';
+const CACHE_NAME = 'rietlabsFuel';
+const urlsToCache = [
+  '/',
+  '/fuel/',
+  '/fuel/main.dart.js',
+];
 
-// Install the service worker and cache files (if you want to pre-cache specific files)
+// Install the service worker and cache files
 self.addEventListener('install', (event) => {
-  // Optionally pre-cache specific files here if needed
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then((cache) => {
+        return cache.addAll(urlsToCache);
+      })
+  );
 });
 
-// Fetch event to handle all requests
+// Fetch event to handle requests
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.match(event.request).then((response) => {
-        // Return cached response if available, otherwise fetch from the network
+        // If the response is in the cache, return it; otherwise, fetch from network
         return response || fetch(event.request).then((networkResponse) => {
-          // Cache the newly fetched resource
           cache.put(event.request, networkResponse.clone());
           return networkResponse;
         });
