@@ -21768,9 +21768,9 @@ _.x=f
 _.c=_.a=null},
 abs:function abs(a,b){this.a=a
 this.b=b},
-abl:function abl(a,b){this.a=a
+abl:function abl(a){this.a=a},
+abm:function abm(a,b){this.a=a
 this.b=b},
-abm:function abm(a){this.a=a},
 abn:function abn(){},
 abo:function abo(){},
 abp:function abp(){},
@@ -39904,7 +39904,7 @@ this.i0()}}
 A.Eq.prototype={
 J(a){var s=null,r=A.W(a),q=A.bp(a,B.aq,t.w).w.r.b,p=A.aub(a,s),o=B.Bt.E(0,new A.aL(0,q,0,0)),n=r.p2.y
 n.toString
-n=A.mb(A.am0(B.Pg,a,!1,!1,!1,!0),s,s,B.cr,!0,n,s,s,B.aR)
+n=A.mb(A.am0(B.Pj,a,!1,!1,!1,!0),s,s,B.cr,!0,n,s,s,B.aR)
 return A.DK(s,new A.t1(n,o,s,s,B.aC,B.le,s,s),B.M,s,new A.dI(s,s,new A.cN(B.p,B.p,p,B.p),s,s,s,B.b8),s,q+161,B.Bp,s,s,s,s)}}
 A.p_.prototype={
 gB(a){var s=this
@@ -72032,7 +72032,7 @@ case 2:return A.N(null,r)}})
 return A.O($async$tt,r)},
 aw(){this.aQ()
 this.w5()},
-J(a){var s=this,r=null,q="[0-9]",p=A.ajM(A.W(a).ax.b,B.Pq),o=t.E,n=A.b([B.B0,A.alL(new A.abl(s,a),B.Pm),A.alL(new A.abm(a),B.xn)],o),m=A.av([null,0],t.LO,t.S),l=t.VS
+J(a){var s=this,r=null,q="[0-9]",p=A.ajM(A.W(a).ax.b,B.Pq),o=t.E,n=A.b([B.B0,A.alL(new A.abl(a),B.xn),A.alL(new A.abm(s,a),B.Pg)],o),m=A.av([null,0],t.LO,t.S),l=t.VS
 o=A.agE(A.b([A.ahJ(A.b([A.VJ(A.DW(s.e,B.h6,"Aircraft",3,1,r,s.gRj(),B.Pe,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abn())),B.x0,A.VJ(A.DW(s.f,B.h6,"Trip Number",8,1,r,s.gRm(),r,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abo()))],o),B.aK,B.bA),B.x1,A.ahJ(A.b([A.VJ(A.DW(s.r,B.h6,"Flight Plan Fuel (lb)",r,1,r,r,r,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abp())),B.x0,A.VJ(A.DW(s.w,B.h6,"Departure Fuel (lb)",r,1,r,r,r,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abq(s)))],o),B.aK,B.bA),B.x1,A.DW(s.x,B.jx,"Reasoning",r,6,6,r,r,r,new A.abr())],o),B.c5,B.aV,B.bA)
 return A.amS(p,new A.xm(B.lh,new A.uO(o,B.ka,s.d),r),new A.Em(new A.FB(new A.a5f(!0,!0,!0,n,m),B.b_,B.aH,!1,r,r,B.xX,!1,r,3,B.ab,B.Ij,r,B.a7,B.al,r),r),A.auN(B.Pi,!1,s.gZt(),"Increment"))}}
 A.abs.prototype={
@@ -72044,13 +72044,13 @@ if(r==null)r=""
 s.f.sfa(r)},
 $S:0}
 A.abl.prototype={
-$0(){this.a.tt()
-A.w2(this.b).Dt(null)},
-$S:0}
-A.abm.prototype={
 $0(){var s=this.a
 A.w2(s).Dt(null)
 A.w2(s).PV("/help",null,t.X)},
+$S:0}
+A.abm.prototype={
+$0(){this.a.tt()
+A.w2(this.b).Dt(null)},
 $S:0}
 A.abn.prototype={
 $1(a){if(a.length<3)return"Aircraft number must have 3 digits"
@@ -76396,7 +76396,7 @@ B.B_=new A.Ep(null)
 B.Bt=new A.aL(16,16,16,8)
 B.Bp=new A.aL(0,0,0,8)
 B.le=new A.aH(25e4)
-B.Pg=new A.dg("App",null,null,null,null,null,null,null,null)
+B.Pj=new A.dg("RietLabs App",null,null,null,null,null,null,null,null)
 B.B0=new A.Eq(null)
 B.B1=new A.p_(null,null,null,null,null,null,null,null,null)
 B.B2=new A.ul(null,null,null)
@@ -77985,16 +77985,16 @@ B.Da=A.b(s([B.Ph]),t.E)
 B.Ia=new A.kU(B.aG,B.aV,B.bA,B.aK,null,B.cv,null,B.Da,null)
 B.Pf=new A.dg('1. Open on Safari;\n2. Tap the Share icon (square with an up arrow);\n3. Select "Add to Home Screen";\n4. Edit the name if needed and tap "Add";\n5. Find the icon on your home screen!\n',null,null,B.bU,null,null,null,null,null)
 B.Kc=new A.f6(1/0,null,B.Pf,null)
-B.Pk=new A.dg("Note:",null,B.h9,null,null,null,null,null,null)
-B.Dk=A.b(s([B.Pk]),t.E)
+B.Pl=new A.dg("Note:",null,B.h9,null,null,null,null,null,null)
+B.Dk=A.b(s([B.Pl]),t.E)
 B.I7=new A.kU(B.aG,B.aV,B.bA,B.aK,null,B.cv,null,B.Dk,null)
-B.Pj=new A.dg("If the app is opening a different mail app, please go to iPhone Preferences:\n1. Open Settings.\n2. Scroll down and tap Mail.\n3. Select Default Mail App.\n4. Choose your preferred email app.\n",null,null,B.bU,null,null,null,null,null)
-B.Ke=new A.f6(1/0,null,B.Pj,null)
+B.Pk=new A.dg("If the app is opening a different mail app, please go to iPhone Preferences:\n1. Open Settings.\n2. Scroll down and tap Mail.\n3. Select Default Mail App.\n4. Choose your preferred email app.\n",null,null,B.bU,null,null,null,null,null)
+B.Ke=new A.f6(1/0,null,B.Pk,null)
 B.Pn=new A.dg("Disclaimer",null,B.h9,null,null,null,null,null,null)
 B.CO=A.b(s([B.Pn]),t.E)
 B.I8=new A.kU(B.aG,B.aV,B.bA,B.aK,null,B.cv,null,B.CO,null)
-B.Pl=new A.dg("The information provided by this app is for informational purposes only. The developer make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the app or the information, products, services, or related graphics contained in the app for any purpose. Any reliance you place on such information is therefore strictly at your own risk.\n\nIn no event will the developer be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of or in connection with the use of this app.",null,null,B.bU,null,null,null,null,null)
-B.Kb=new A.f6(1/0,null,B.Pl,null)
+B.Pm=new A.dg("The information provided by this app is for informational purposes only. The developer make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the app or the information, products, services, or related graphics contained in the app for any purpose. Any reliance you place on such information is therefore strictly at your own risk.\n\nIn no event will the developer be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of or in connection with the use of this app.",null,null,B.bU,null,null,null,null,null)
+B.Kb=new A.f6(1/0,null,B.Pm,null)
 B.D4=A.b(s([B.I9,B.Kd,B.Ia,B.Kc,B.I7,B.Ke,B.I8,B.Kb]),t.E)
 B.Au=new A.tQ(B.aH,B.aV,B.bA,B.aK,null,B.cv,null,B.D4,null)
 B.K0=new A.xm(B.lh,B.Au,null)
@@ -78366,8 +78366,8 @@ B.NT=new A.j(!0,B.o,null,"Roboto",B.J,null,null,null,null,null,null,null,null,nu
 B.Pd=new A.cW(B.OG,B.LP,B.MO,B.NI,B.NV,B.Lf,B.Mn,B.Lj,B.Ns,B.O7,B.MY,B.O9,B.Ok,B.NJ,B.NT)
 B.Pe=new A.dg("LJX",null,null,null,null,null,null,null,null)
 B.xn=new A.dg("Help",null,null,null,null,null,null,null,null)
+B.Pg=new A.dg("Contact Developer: Ricardo Riet",null,null,null,null,null,null,null,null)
 B.Pi=new A.dg("Send",null,null,null,null,null,null,null,null)
-B.Pm=new A.dg("Created By: Ricardo Riet",null,null,null,null,null,null,null,null)
 B.Pq=new A.dg("Fuel Efficiency Report",null,null,null,null,null,null,null,null)
 B.Ss=new A.a6D(0,"system")
 B.GE=new A.f(0.05,0)
