@@ -33,10 +33,25 @@
   <title>Fuel Report</title>
   <link rel="manifest" href="manifest.json">
 
+  <script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+				navigator.serviceWorker.register('flutter_service_worker.js?v=3718785318').then(function(registration) {
+					// Registration was successful
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function(err) {
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+	</script>
+
 </head>
 <body>
 
   <script src="flutter_bootstrap.js" async></script>
+
 
 </body>
 </html>
