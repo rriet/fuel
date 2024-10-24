@@ -72033,7 +72033,7 @@ return A.O($async$tt,r)},
 aw(){this.aQ()
 this.w5()},
 J(a){var s=this,r=null,q="[0-9]",p=A.ajM(A.W(a).ax.b,B.Pq),o=t.E,n=A.b([B.B0,A.alL(new A.abl(a),B.xn),A.alL(new A.abm(s,a),B.Ph)],o),m=A.av([null,0],t.LO,t.S),l=t.VS
-o=A.agE(A.b([A.ahJ(A.b([A.VJ(A.DW(s.e,B.h6,"Aircraft",3,1,r,s.gRj(),B.Pe,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abn())),B.x0,A.VJ(A.DW(s.f,B.h6,"Trip Number",8,1,r,s.gRm(),r,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abo()))],o),B.aK,B.bA),B.x1,A.ahJ(A.b([A.VJ(A.DW(s.r,B.h6,"Flight Plan Fuel (lb)",r,1,r,r,r,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abp())),B.x0,A.VJ(A.DW(s.w,B.h6,"Departure Fuel (lb)",r,1,r,r,r,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abq(s)))],o),B.aK,B.bA),B.x1,A.DW(s.x,B.jx,"Reasoning",r,6,6,r,r,r,new A.abr())],o),B.c5,B.aV,B.bA)
+o=A.agE(A.b([A.ahJ(A.b([A.VJ(A.DW(s.e,B.h6,"Aircraft",3,1,r,s.gRj(),B.Pf,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abn())),B.x0,A.VJ(A.DW(s.f,B.h6,"Trip Number",8,1,r,s.gRm(),r,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abo()))],o),B.aK,B.bA),B.x1,A.ahJ(A.b([A.VJ(A.DW(s.r,B.h6,"Flight Plan Fuel (lb)",r,1,r,r,r,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abp())),B.x0,A.VJ(A.DW(s.w,B.h6,"Departure Fuel (lb)",r,1,r,r,r,A.b([new A.ka(A.hZ(q,!0,!1),!0,"")],l),new A.abq(s)))],o),B.aK,B.bA),B.x1,A.DW(s.x,B.jx,"Reasoning",r,6,6,r,r,r,new A.abr())],o),B.c5,B.aV,B.bA)
 return A.amS(p,new A.xm(B.lh,new A.uO(o,B.ka,s.d),r),new A.Em(new A.FB(new A.a5f(!0,!0,!0,n,m),B.b_,B.aH,!1,r,r,B.xX,!1,r,3,B.ab,B.Ij,r,B.a7,B.al,r),r),A.auN(B.Pj,!1,s.gZt(),"Increment"))}}
 A.abs.prototype={
 $0(){var s=this.a,r=this.b.a,q=A.c1(r.h(0,"aircraft"))
@@ -77983,8 +77983,8 @@ B.Kc=new A.f6(1/0,null,B.Po,null)
 B.Pi=new A.dg("Installing on Iphone:",null,B.h9,null,null,null,null,null,null)
 B.D9=A.b(s([B.Pi]),t.E)
 B.Ia=new A.kU(B.aG,B.aV,B.bA,B.aK,null,B.cv,null,B.D9,null)
-B.Pf=new A.dg('1. Open on Safari;\n2. Tap the Share icon (square with an up arrow);\n3. Select "Add to Home Screen";\n4. Edit the name if needed and tap "Add";\n5. Find the icon on your home screen!\n',null,null,B.bU,null,null,null,null,null)
-B.Kb=new A.f6(1/0,null,B.Pf,null)
+B.Pe=new A.dg('1. Open on Safari;\n2. Tap the Share icon (square with an up arrow);\n3. Select "Add to Home Screen";\n4. Edit the name if needed and tap "Add";\n5. Find the icon on your home screen!\n',null,null,B.bU,null,null,null,null,null)
+B.Kb=new A.f6(1/0,null,B.Pe,null)
 B.Pm=new A.dg("Note:",null,B.h9,null,null,null,null,null,null)
 B.Dj=A.b(s([B.Pm]),t.E)
 B.I7=new A.kU(B.aG,B.aV,B.bA,B.aK,null,B.cv,null,B.Dj,null)
@@ -78364,8 +78364,8 @@ B.Ok=new A.j(!0,B.C,null,"Roboto",B.J,null,null,null,null,null,null,null,null,nu
 B.NJ=new A.j(!0,B.o,null,"Roboto",B.J,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackHelsinki labelMedium",null,null,null,null)
 B.NT=new A.j(!0,B.o,null,"Roboto",B.J,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackHelsinki labelSmall",null,null,null,null)
 B.Pd=new A.cW(B.OG,B.LP,B.MO,B.NI,B.NV,B.Lf,B.Mn,B.Lj,B.Ns,B.O7,B.MY,B.O9,B.Ok,B.NJ,B.NT)
-B.Pe=new A.dg("LJX",null,null,null,null,null,null,null,null)
 B.xn=new A.dg("Help",null,null,null,null,null,null,null,null)
+B.Pf=new A.dg("LXJ",null,null,null,null,null,null,null,null)
 B.Ph=new A.dg("Contact Developer: Ricardo Riet",null,null,null,null,null,null,null,null)
 B.Pj=new A.dg("Send",null,null,null,null,null,null,null,null)
 B.Pq=new A.dg("Fuel Efficiency Report",null,null,null,null,null,null,null,null)
